@@ -1,0 +1,14 @@
+<p>Pages</p>
+<ol reversed class="pagelist" style="counter-reset: start-from {{ pageslist.length + 1 }}">
+  {% for page in pageslist | reverse %}
+    {% set currentPage = page.data.page %}
+    <li class="pagelist-item{% if page.url == url %} pagelist-item-active{% endif %}">
+      link <a href="{{ page.url | url }}" class="pagelist-link">
+        {% if currentPage.title %}{{ currentPage.title }}
+        {% else %}
+          <code>{{ post.url }}</code>
+        {% endif %}
+      </a>
+    </li>
+  {% endfor %}
+</ol>
