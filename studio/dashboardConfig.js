@@ -39,7 +39,11 @@ export default {
             value: 'https://github.com/PeterBroom/sanity-eleventy-blog-master',
             category: 'Code'
           },
-          {title: 'Frontend', value: 'https://sanity-eleventy-blog-master.netlify.app', category: 'apps'}
+          {
+            title: 'Frontend',
+            value: 'https://sanity-eleventy-blog-master.netlify.app',
+            category: 'apps'
+          }
         ]
       }
     },

@@ -7,7 +7,7 @@ templateClass: tmpl-page
   <p>Written by {% for author in page.authors %}{{author.name}}
     {% endfor %}
   </p>
-  {{ post.body | markdownify | safe }}
+  {{ page.body | markdownify | safe }}
   <p>
     <a href="{{ '/' | url }}">← Home</a>
   </p>
