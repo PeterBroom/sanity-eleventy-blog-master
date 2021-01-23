@@ -3,7 +3,7 @@ import {format} from 'date-fns'
 export default {
   name: 'page',
   type: 'document',
-  title: 'Page',
+  title: 'Blog Page',
   fields: [
     {
       name: 'title',
@@ -15,7 +15,7 @@ export default {
       name: 'slug',
       type: 'slug',
       title: 'Slug',
-      description: 'Some frontends will require a slug to be set to be able to show the page',
+      description: 'Some frontends will require a slug to be set to be able to show the post',
       options: {
         source: 'title',
         maxLength: 96
@@ -25,7 +25,7 @@ export default {
       name: 'publishedAt',
       type: 'datetime',
       title: 'Published at',
-      description: 'This can be used to schedule page for publishing'
+      description: 'This can be used to schedule post for publishing'
     },
     {
       name: 'mainImage',
@@ -37,7 +37,7 @@ export default {
       type: 'excerptPortableText',
       title: 'Excerpt',
       description:
-        'This ends up on summary pages, on Google, when people share your page in social media.'
+        'This ends up on summary pages, on Google, when people share your post in social media.'
     },
     {
       name: 'authors',

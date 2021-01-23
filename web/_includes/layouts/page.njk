@@ -4,11 +4,4 @@ templateClass: tmpl-page
 ---
 <article>
   <h1>{{ page.title }}</h1>
-  <p>Written by {% for author in page.authors %}{{author.name}}
-    {% endfor %}
-  </p>
-  {{ page.body | markdownify | safe }}
-  <p>
-    <a href="{{ '/' | url }}">← Home</a>
-  </p>
 </article>
